@@ -167,6 +167,8 @@ git reset HEAD~1       // reset the HEAD pointer to the last commit
 git reset <commit hash>       // reset the HEAD pointer to the commit hash
 ```
 
+useing the option --hard will reset the HEAD pointer and the staging area to the commit you specified it will also delete the changes you have made
+
 - **git commit--amend :** used for undoing a commit and adding the changes to the previous commit
 
 ```
