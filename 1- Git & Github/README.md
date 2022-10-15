@@ -157,7 +157,7 @@ git revert <commit hash>       // revert the commit with the commit hash
 - **git reset :** used for undoing a commit and moving the HEAD pointer to a specific commit
 
 ```
-git reset       // reset the HEAD pointer to the last commit
+git reset HEAD~1       // reset the HEAD pointer to the last commit
 git reset <commit hash>       // reset the HEAD pointer to the commit hash
 ```
 
