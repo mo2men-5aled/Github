@@ -119,6 +119,14 @@ add the changes from one branch to the master branch or another branch
 git merge <branch name> // merge that branch to the current branch
 ```
 
+- before merging you have to make sure that you are on the branch you want to merge to
+
+- befor merging you can use "git diff" command to see the differences between the branches
+
+```
+git diff <branch name>       // compare the current branch with the branch you want to merge
+```
+
 ## 9- Merge Conflicts
 
 merge cnflicts happens when you have two branches that have changes on the same line of code or in the same file

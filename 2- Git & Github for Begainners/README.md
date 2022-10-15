@@ -35,8 +35,49 @@ ls | grep <filename>
   now you are connected to your github account
 
 3- after that you have to make sure that your local git CLI knows about the key you generated on the github account
-use the command ssh-add <filename> to add that ssh key to the ssh-agent
+use the command ssh-add _"filename"_ to add that ssh key to the ssh-agent
 
 ```
 ssh-add <filename>
+```
+
+## create a repo from the local git CLI
+
+1- create a folder local in your computer
+2- open the folder in the terminal
+3- type the command git init to initialize the folder as a git repo
+
+```
+git init
+```
+
+4- create or add your files in the folder
+5- type the command git add . to add all the files to the staging area
+
+```
+git add .
+```
+
+6- type the command git commit -m "your message" to commit the files to the local repo
+
+```
+git commit -m "your message"
+```
+
+7- go to github.com
+
+8- click on new repository and create a new repo
+
+9- copy the url of the repo
+
+10- type the command git remote add origin _"repo url_" to add the remote repo to the local repo
+
+```
+git remote add origin <repo url>
+```
+
+- you can use this command to see what remote repos connected to this local one
+
+```
+git remote -v
 ```
