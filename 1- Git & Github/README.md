@@ -34,4 +34,10 @@ When start working on a project, this project stored in a repository,all the cod
 if you are working on a project that you don't have a collaborator access to
 
 - **Fork :**
-  create am exact copy of another repositpry but under your account so you have a right access
+  create an exact copy of another repositpry but under your account so you have a right access
+
+## Github Hub Cloning and working locally
+
+- Working Locally is to work in your on text editor on your computer without network access
+- **Cloning :**
+  taking a copy from the remote branch to work on it locally
