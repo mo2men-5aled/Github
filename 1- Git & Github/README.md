@@ -88,6 +88,8 @@ git commit -m "commit message" // commit with a message
 git commit -am "commit message" // add and commit with a message
 ```
 
+the option -am is used to add and commit at the same time but only the existing files not the new files you have to add them first
+
 - git push : used for pushing the changes to the remote repository
 
 ```
