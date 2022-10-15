@@ -44,6 +44,12 @@ if you are working on a project that you don't have a collaborator access to
 
 ## 5- Git Commands
 
+- git log : show the history of commits
+
+```
+git log
+```
+
 - git clone : used for cloning a repository
 
 ```
