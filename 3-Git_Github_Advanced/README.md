@@ -1,4 +1,4 @@
-# Git & Github Advanced tutrial
+# Git & Github Advanced
 
 ## Interactive Rebase
 

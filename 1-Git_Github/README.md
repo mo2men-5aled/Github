@@ -1,5 +1,3 @@
-# Git & Github
-
 ## 1- Git & Github introduction
 
 ### What is Git..?
