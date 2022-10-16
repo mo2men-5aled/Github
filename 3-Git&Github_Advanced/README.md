@@ -109,3 +109,37 @@ situation example:
   git branch <branch name> <commit hash>
   ```
   - that will create a branch with the same name and data as the deleted branch
+
+## Submodules
+
+it is a way to include another git repository in your project
+
+**Steps:**
+
+- create a new folder in your repo
+- go into that new folder and use the command:
+  ```
+  git submodule add <repo url>     //the repo url is the url of the repo you want to include
+  ```
+  git regareds adding a submodule as a modification like anyother modification, so you have to commit it
+
+#### what about cloning a repo that has submodules
+
+- when you clone a repo that has submodules, the submodules will not be cloned with it by default
+
+- the repo will be colned normally, but when you try to find the submodules you will only find an empty folders
+
+- to clone the submodules with the repo you have to use the command:
+
+  ```
+  git submodule update --init --recursive
+  ```
+
+  - this command will clone the submodules
+
+- but if you want to clone the repo and the submodules in one command you can use the command:
+  ```
+  git clone --recurse-submodules <repo url>
+  ```
+
+## Search & Find
