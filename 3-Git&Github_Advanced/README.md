@@ -143,3 +143,36 @@ it is a way to include another git repository in your project
   ```
 
 ## Search & Find
+
+searching for a commit or a file in the history of the project
+
+- Filtering your commit history
+  - by date --before and --after
+    - you can use the command:
+      ```
+      git log --before="2020-01-01"
+      ```
+      or
+      ```
+      git log --after="2020-01-01"
+      ```
+  - by message --grep
+    - you can use the command:
+      ```
+      git log --grep="commit message or a word in commit message"
+      ```
+  - by author --author
+    - you can use the command:
+      ```
+      git log --author="author name"
+      ```
+  - by file -- "file name"
+    - you can use the command:
+      ```
+      git log -- "file name"
+      ```
+  - by branch "branch name"
+    - you can use the command:
+      ```
+      git log "branch name"
+      ```
