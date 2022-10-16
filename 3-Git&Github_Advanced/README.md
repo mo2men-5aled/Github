@@ -54,3 +54,58 @@ Situation example of cherry picking: - if you make a commit on the wrong branch 
   ```
   git reset --hard HEAD~1
   ```
+
+## Reflog
+
+it is a protocol of head pointer movements
+it is used to recover from mistakes
+
+#### Recovering a commit that was deleted
+
+situation example:
+
+- if you reset the head pointer to a commit and you want to go back to the previous commit
+
+**Steps:**
+
+- first you have to find the commit hash of the commit you want to go back to
+- use the command:
+  ```
+  git reflog
+  ```
+- you will see a list of commits
+- find the commit hash of the commit you want to go back to
+- then you can get them back in a new branch using the command:
+  ```
+  git checkout -b <new branch name> <commit hash>
+  ```
+  or
+  ```
+  git branch <branch name> <commit hash>
+  ```
+  or you can also get them back in the same branch using the command:
+  ```
+  git reset --hard <commit hash>
+  ```
+
+#### Recovering a Branch that was deleted
+
+situation example:
+
+- if you deleted a branch and you want to get it back
+  **Steps:**
+- use the command:
+  ```
+  git reflog
+  ```
+- you will see a list of commits and actions you have done
+- find the commit or action hash you want to go back to
+- then you can get the branch back using the command:
+  ```
+  git checkout -b <new branch name> <commit hash>
+  ```
+  or
+  ```
+  git branch <branch name> <commit hash>
+  ```
+  - that will create a branch with the same name and data as the deleted branch
