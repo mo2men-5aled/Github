@@ -18,3 +18,22 @@ it is meant to update your local history before merging your branch with the tea
 **Steps:**
 
 - determine how far back do you want to go
+- use the command
+
+```
+`git rebase -i HEAD~<number of commits>`    //-i stands for interactive
+```
+
+- you will see a list of commits
+- you can change the action of each commit Ex. `pick` to:
+  - `edit` : edit the commit
+  - `squash` : if you want to combine a commit with the commit above
+  - `fixup` : if you want to combine a commit with the commit above and delete the commit message
+  - `drop` : if you want to delete a commit
+  - `reword` : if you want to update the commit message
+  - `exec` : if you want to run a command
+  - `break` : if you want to stop the rebase
+- save the file and exit
+- you will see a list of commits again
+- you can change the commit message
+- save the file and exit
