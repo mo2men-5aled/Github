@@ -37,3 +37,20 @@ it is meant to update your local history before merging your branch with the tea
 - you will see a list of commits again
 - you can change the commit message
 - save the file and exit
+
+## Cherry Picking
+
+integrating a commit from one branch to another branch
+Situation example of cherry picking: - if you make a commit on the wrong branch and you want to move it to another branch
+
+**Steps:**
+
+- switch to the branch you want to move the commit to
+- use the command:
+  ```
+  git cherry-pick <commit hash>
+  ```
+- if you want to delete it from the branch you moved it from use the command:
+  ```
+  git reset --hard HEAD~1
+  ```
