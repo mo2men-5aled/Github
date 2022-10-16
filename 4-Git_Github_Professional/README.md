@@ -1,6 +1,6 @@
 # Git & Github Professional
 
-## 1- The perfect commit
+## 1- The Perfect Commit
 
 the bigger the commit contains main topics and changes, the harder it is to understand it.
 
@@ -20,7 +20,7 @@ then it will show you the hunks of the file and you can choose which hunk you wa
 - the subject should be a brief summary of the changes
 - the body should be a detailed explanation of the changes
 
-## 2- Branching strategies
+## 2- Branching Strategies
 
 - use branches to isolate your work from the master branch
 - use branches to work on multiple features at the same time
@@ -55,3 +55,39 @@ short living branches : feature branch
 > what is the best branching strategy?
 
 - there is no best branching strategy it depends on understanding the project, the team and the release cycle
+
+## 3- Pull Request
+
+- it is a way to collaborate with other people on github, you are inviting them to review your code and give you feedback before merging it to the master branch
+
+- on forking : a fork is your personal copy of someone else's project, you can make changes to it without affecting the original project and you can send a pull request to the original project to merge your changes
+
+**notes :** pull request based on branches not on commits
+
+## 4- Merge Conflicts
+
+- it happens when :
+
+  - merging
+  - rebasing
+  - cherry-picking
+  - pulling
+  - stashing
+
+- how to undo a merge conflict :
+
+```
+  git reset --abort
+  git rebase --abort
+```
+
+- how to solve a merge conflict :
+
+  by cleaning up the file :^)
+
+  - you talk to the other teammate who made the other changes and decide which changes to keep but it is not always possible to do that
+    so you need to make a decision by yourself and you can do that by looking at the changes and decide which one to keep and which one to delete and then you need to commit the changes and push it to the remote branch again also you can use this command to open the conflicted file in your editor :
+
+  ```
+    git mergetool
+  ```
